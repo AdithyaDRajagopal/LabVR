@@ -6,7 +6,6 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI TimerText;
-    //public TextMeshProUGUI Status;
     private float StartTime;
     private bool running;
     private int count = 0;
@@ -38,35 +37,33 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void PressBuzzer()
+    {
+        count = (count + 1) % 3;
+        if (count == 0)
+        ResetTimer();
+        else if (count == 1)
+        StartTimer();
+        else
+        StopTimer();
+    }
+
     public void StartTimer()
     {
-        //Status = GetComponent<TextMeshProUGUI>();
-        count = (count + 1)%3;
-        if (count == 1)
-        {
-            print ("START");
-            running = true;
-            StartTime = Time.time;
-            //Status.text = "STOP";
-        }
-        else if (count == 2)
-        StopTimer();
-        else
-        ResetTimer();
+        print ("START");
+        running = true;
+        StartTime = Time.time;
     }
 
     public void StopTimer()
     {
-        //Status = GetComponent<TextMeshProUGUI>();
         print("STOP");
         running = false;
-        //Status.text = "RESET";
     }
 
     public void ResetTimer()
     {
         TimerText = GetComponent<TextMeshProUGUI>();
-        //Status = GetComponent<TextMeshProUGUI>();
         print("RESET");
         running = false;
         TimerText.text = "00:00:00";
