@@ -8,10 +8,11 @@ public class PendulumBehaviour : MonoBehaviour
     private float maxZangle;
     private Vector3 screenPoint;
     private Vector3 offset;
+    private Vector3 InitPos;
 
     void Start()
     {
-        Debug.Log (transform.position);
+        InitPos = transform.position;
     }
 
     void OnMouseDown()
@@ -26,4 +27,5 @@ public class PendulumBehaviour : MonoBehaviour
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
     }
+
 }
