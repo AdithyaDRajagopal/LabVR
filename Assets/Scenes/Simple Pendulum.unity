@@ -3123,6 +3123,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1931614168}
+        m_TargetAssemblyTypeName: Observations, Assembly-CSharp
+        m_MethodName: PressBuzzer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1172526307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5560,6 +5572,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7652ccda78cc62940816f5d6c97028ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pendulum: {fileID: 375172760}
+  T10_1: {fileID: 1746027311}
+  T10_2: {fileID: 354951173}
+  T10_3: {fileID: 1499994189}
+  T10_4: {fileID: 838538574}
+  T10_5: {fileID: 888057113}
+  T1: {fileID: 1168883504}
+  T2: {fileID: 1889931369}
+  T3: {fileID: 1462779284}
+  T4: {fileID: 1773328258}
+  T5: {fileID: 1602805384}
 --- !u!1 &1939042938
 GameObject:
   m_ObjectHideFlags: 0
