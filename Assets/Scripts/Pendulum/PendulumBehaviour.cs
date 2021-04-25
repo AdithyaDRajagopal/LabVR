@@ -9,10 +9,15 @@ public class PendulumBehaviour : MonoBehaviour
     private Vector3 screenPoint;
     private Vector3 offset;
     private Vector3 InitPos;
+    private Quaternion InitRot;
+    int count;
+    Rigidbody Pendulum;
 
     void Start()
     {
         InitPos = transform.position;
+        InitRot = transform.rotation;
+        count = 0;
     }
 
     void OnMouseDown()
@@ -26,6 +31,19 @@ public class PendulumBehaviour : MonoBehaviour
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
+    }
+
+    public void Reset()
+    {
+        count = (count+1)%3;
+        if (count == 0)
+        {
+            Pendulum = GetComponent<Rigidbody>();
+            transform.position = InitPos;
+            transform.rotation = InitRot;
+            Pendulum.velocity = Vector3.zero;
+            Pendulum.angularVelocity = Vector3.zero;
+        }
     }
 
 }

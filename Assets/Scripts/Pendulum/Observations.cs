@@ -40,7 +40,7 @@ public class Observations : MonoBehaviour
             Timefor10 = seconds+"."+ms[2]+ms[3];
             TimePeriod = t1+ms[2]+ms[3];
             if (t1 == "0")
-            TimePeriod = ms;
+            TimePeriod = "0.0"+ms[2]+ms[3];
         }
     }
 
@@ -65,30 +65,35 @@ public class Observations : MonoBehaviour
     {
         Rigidbody Simple_Pendulum = Pendulum.GetComponent<Rigidbody>();
         int mass = (int) Simple_Pendulum.mass;
-        if (mass == 1)
+        if (mass == 50)
         {
             T10_1.text = Timefor10;
             T1.text = TimePeriod;
         }
-        else if (mass == 2)
+        else if (mass == 100)
         {
             T10_2.text = Timefor10;
             T2.text = TimePeriod;
         }
-        else if (mass == 3)
+        else if (mass == 150)
         {
             T10_3.text = Timefor10;
             T3.text = TimePeriod;
         }
-        else if (mass == 4)
+        else if (mass == 200)
         {
             T10_4.text = Timefor10;
             T4.text = TimePeriod;
         }
-        else if (mass == 5)
+        else
         {
             T10_5.text = Timefor10;
             T5.text = TimePeriod;
         }
+    }
+
+    public void Submit()
+    {
+        print("Observations Submitted...");
     }
 }
