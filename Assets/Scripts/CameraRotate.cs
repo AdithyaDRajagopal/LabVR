@@ -18,4 +18,9 @@ public class CameraRotate : MonoBehaviour
             Camera.main.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
         }
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

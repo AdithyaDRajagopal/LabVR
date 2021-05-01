@@ -39,8 +39,8 @@ public class Observations : MonoBehaviour
             string ms = (t%60 - ((int)t%60)).ToString("f2");
             Timefor10 = seconds+"."+ms[2]+ms[3];
             TimePeriod = t1+ms[2]+ms[3];
-            if (t1 == "0")
-            TimePeriod = "0.0"+ms[2]+ms[3];
+            if (seconds[seconds.Length-1] == '0')
+            TimePeriod = t1+".0"+ms[2]+ms[3];
         }
     }
 

@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Simple Pendulum.unity
+    guid: 0be47b1667ad4c549b32207feaa4be9c
   m_configObjects: {}
