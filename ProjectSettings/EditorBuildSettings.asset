@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 035155a39dc86114e8a176a20deedfd7
+  - enabled: 1
     path: Assets/Scenes/Simple Pendulum.unity
     guid: 0be47b1667ad4c549b32207feaa4be9c
+  - enabled: 1
+    path: Assets/Scenes/Hookes Law.unity
+    guid: aef95e69f0a3a1b428bd81c057a98b3d
   m_configObjects: {}
