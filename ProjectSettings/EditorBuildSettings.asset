@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hookes Law.unity
     guid: aef95e69f0a3a1b428bd81c057a98b3d
+  - enabled: 1
+    path: Assets/Scenes/Simple Pendulum VR.unity
+    guid: e9be53e49101e4b4a8460d19602c3c18
+  - enabled: 1
+    path: Assets/Scenes/Hookes Law VR.unity
+    guid: 54880c41baa8d6844a8e3099bee0353e
   m_configObjects: {}

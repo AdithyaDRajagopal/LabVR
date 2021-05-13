@@ -10,6 +10,7 @@ public class Login : MonoBehaviour
     public InputField Password;
     public InputField Key;
     public GameObject KeyInput;
+    public Toggle VR;
 
     void Start()
     {
@@ -38,10 +39,21 @@ public class Login : MonoBehaviour
     public void StartExpt()
     {
         string key = Key.text;
+        bool VRenable = VR.isOn;
         if (key == "simple-pendulum")
-            SceneManager.LoadScene("Simple Pendulum");
+        {
+            if (VRenable == false)
+                SceneManager.LoadScene("Simple Pendulum");
+            else
+                SceneManager.LoadScene("Simple Pendulum VR");
+        }
         else if (key == "hookes-law")
-            SceneManager.LoadScene("Hookes Law");
+        {
+            if (VRenable == false)
+                SceneManager.LoadScene("Hookes Law");
+            else
+                SceneManager.LoadScene("Hookes Law VR");
+        }
         else
             print("Invlaid Key");
     }
