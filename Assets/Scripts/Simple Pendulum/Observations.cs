@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Observations : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Observations : MonoBehaviour
     public TMP_Text T2;
     public TMP_Text T3;
     public TMP_Text T4;
-    public TMP_Text T5;    
+    public TMP_Text T5;
 
     void Start()
     {
@@ -95,5 +96,6 @@ public class Observations : MonoBehaviour
     public void Submit()
     {
         print("Observations Submitted...");
+        SceneManager.LoadScene("Login");
     }
 }

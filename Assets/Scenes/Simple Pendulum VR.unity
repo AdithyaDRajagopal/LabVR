@@ -4019,8 +4019,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Observations, Assembly-CSharp
+      - m_Target: {fileID: 1404099677}
+        m_TargetAssemblyTypeName: TimerRecord, Assembly-CSharp
         m_MethodName: Submit
         m_Mode: 1
         m_Arguments:
@@ -4509,6 +4509,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerText: {fileID: 1280183372}
   Status: {fileID: 1467193589}
+  Pendulum: {fileID: 375172760}
+  T10_1: {fileID: 1746027311}
+  T10_2: {fileID: 354951173}
+  T10_3: {fileID: 1499994189}
+  T10_4: {fileID: 838538574}
+  T10_5: {fileID: 888057113}
+  T1: {fileID: 1168883504}
+  T2: {fileID: 1889931369}
+  T3: {fileID: 1462779284}
+  T4: {fileID: 1773328258}
+  T5: {fileID: 1602805384}
 --- !u!1 &1433895148
 GameObject:
   m_ObjectHideFlags: 0

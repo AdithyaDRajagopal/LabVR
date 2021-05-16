@@ -57,4 +57,9 @@ public class Login : MonoBehaviour
         else
             print("Invlaid Key");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
