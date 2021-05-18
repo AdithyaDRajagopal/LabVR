@@ -23,6 +23,8 @@ public class Login : MonoBehaviour
     public InputField Key;
     public GameObject KeyInput;
     public Toggle VR;
+    public Text LoginError;
+    public Text KeyError;
 
     void Start()
     {
@@ -63,6 +65,8 @@ public class Login : MonoBehaviour
             JsonUtility.FromJsonOverwrite(req.downloadHandler.text, res);
             Debug.Log("Received Token: " + res.token);
         }
+        ////LoginError.text = "Invalid email or password";
+
         // if (email == "abc") // If user in database
         // {
         //     if (pass == "123") // If password is the user's password
@@ -74,7 +78,7 @@ public class Login : MonoBehaviour
         //         print("Wrong password");
         // }
         // else
-        //     print("User Invalid");
+        //     LoginError.text = "Invalid email or password";
     }
 
     public void StartExpt()
@@ -96,7 +100,7 @@ public class Login : MonoBehaviour
                 SceneManager.LoadScene("Hookes Law VR");
         }
         else
-            print("Invlaid Key");
+            KeyError.text = "Invalid Key";
     }
 
     public void ExitGame()
