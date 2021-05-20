@@ -45,7 +45,6 @@ public class Login : MonoBehaviour
         var user = new UserData();
         user.email = email;
         user.password = pass;
-        Debug.Log(user);
         string json = JsonUtility.ToJson(user);
 
         var req = new UnityWebRequest("https://vrlabserver.herokuapp.com/api/login", "POST");
@@ -59,10 +58,20 @@ public class Login : MonoBehaviour
 
         if (req.isNetworkError){
             Debug.Log("Error While Sending: " + req.error);
+            LoginError.text = "Network issues";
+        }
+        else if(req.isHttpError){
+            Debug.Log("Error While Sending: " + req.error);
+            var res=new Response();
+            JsonUtility.FromJsonOverwrite(req.downloadHandler.text, res);
+            Debug.Log("Error: " + res.message);
+            LoginError.text = res.message;
         }
         else{
             var res=new Response();
             JsonUtility.FromJsonOverwrite(req.downloadHandler.text, res);
+            gameObject.SetActive(false);
+            KeyInput.SetActive(true);
             Debug.Log("Received Token: " + res.token);
         }
         ////LoginError.text = "Invalid email or password";
