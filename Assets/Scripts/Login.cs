@@ -74,20 +74,6 @@ public class Login : MonoBehaviour
             KeyInput.SetActive(true);
             Debug.Log("Received Token: " + res.token);
         }
-        ////LoginError.text = "Invalid email or password";
-
-        // if (email == "abc") // If user in database
-        // {
-        //     if (pass == "123") // If password is the user's password
-        //     {
-        //         gameObject.SetActive(false);
-        //         KeyInput.SetActive(true);
-        //     }
-        //     else
-        //         print("Wrong password");
-        // }
-        // else
-        //     LoginError.text = "Invalid email or password";
     }
 
     public void StartExpt()

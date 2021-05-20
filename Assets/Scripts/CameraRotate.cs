@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraRotate : MonoBehaviour
 {
-    public float sensitivity = 0.5f;
-    public float maxYangle = 80f;
+    float sensitivity = 10f;
+    float maxYangle = 80f;
     private Vector2 currentRotation;
     void Update()
     {
