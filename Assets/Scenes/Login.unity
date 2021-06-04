@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -738,7 +738,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1601252798}
+      - m_Target: {fileID: 2051737481}
         m_TargetAssemblyTypeName: Login, Assembly-CSharp
         m_MethodName: StartExpt
         m_Mode: 1
@@ -1104,7 +1104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &800261039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1601252798}
+      - m_Target: {fileID: 2051737481}
         m_TargetAssemblyTypeName: Login, Assembly-CSharp
         m_MethodName: login
         m_Mode: 1
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1601252798}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Login, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -2272,7 +2272,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601252797}
-  - component: {fileID: 1601252798}
   m_Layer: 5
   m_Name: Inputs
   m_TagString: Untagged
@@ -2303,25 +2302,6 @@ RectTransform:
   m_AnchoredPosition: {x: 202, y: -10}
   m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1601252798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601252796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd5a07bfe09ef04fad8a1d73ca41967, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Email: {fileID: 1038490579}
-  Password: {fileID: 351176499}
-  Key: {fileID: 723191414}
-  KeyInput: {fileID: 800261038}
-  VR: {fileID: 415565645}
-  LoginError: {fileID: 903193949}
-  KeyError: {fileID: 599328624}
 --- !u!1 &1611375637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2051737478}
+  - component: {fileID: 2051737481}
   - component: {fileID: 2051737480}
   - component: {fileID: 2051737479}
   m_Layer: 5
@@ -2717,6 +2698,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051737477}
   m_CullTransparentMesh: 1
+--- !u!114 &2051737481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051737477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd5a07bfe09ef04fad8a1d73ca41967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Email: {fileID: 1038490579}
+  Password: {fileID: 351176499}
+  Key: {fileID: 723191414}
+  Inputs: {fileID: 1601252796}
+  KeyInput: {fileID: 800261038}
+  VR: {fileID: 415565645}
+  LoginError: {fileID: 903193949}
+  KeyError: {fileID: 599328624}
 --- !u!1 &2135240132
 GameObject:
   m_ObjectHideFlags: 0
