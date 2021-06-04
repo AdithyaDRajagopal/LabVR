@@ -3,6 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+
+public class DataVR{
+
+public string[] result;
+}
+
+
+
+public class ResultVR{
+    public string time;
+    public int weight;
+
+    public ResultVR(string t,int w){
+        time=t;
+        weight=w;
+    }
+
+    
+}
 
 public class TimerRecord : MonoBehaviour
 {
@@ -137,8 +157,62 @@ public class TimerRecord : MonoBehaviour
 
     public void Submit()
     {
+        var token=PlayerPrefs.GetString("token");
+        var key=PlayerPrefs.GetString("key");
+        StartCoroutine(expSubmit(token,key));
         print("Observations Submitted...");
         SceneManager.LoadScene("Login");
+    }
+
+    public IEnumerator expSubmit(string token,string key){
+
+        var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
+        Debug.Log(url);
+        WWWForm form=new WWWForm();
+        form.AddField("key",key);
+        
+        string[] r=new string[5];
+
+        r[0]=JsonUtility.ToJson( new ResultVR(T1.text,50));
+        r[1]= JsonUtility.ToJson(new ResultVR(T2.text,100));
+        r[2]=JsonUtility.ToJson( new ResultVR(T3.text,150));
+        r[3]= JsonUtility.ToJson(new ResultVR(T4.text,200));
+        r[4]= JsonUtility.ToJson(new ResultVR(T5.text,250));
+
+
+       
+
+
+        DataVR d=new DataVR();
+        
+        d.result=r;
+        string json = JsonUtility.ToJson(d);
+        form.AddField("result",json);
+
+
+        
+        using (UnityWebRequest www = UnityWebRequest.Post(url, form))
+        {
+        
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.Log(www.error);
+                
+            }
+            else
+            {
+                
+                Debug.Log(www.downloadHandler.text);
+                
+
+            //      var res=new Response();
+            // JsonUtility.FromJsonOverwrite(www.downloadHandler.text, res);
+            //     Debug.Log(res);
+            }
+
+    }
     }
 
     void Oscillate()
