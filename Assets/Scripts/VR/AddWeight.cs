@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AddWeight : MonoBehaviour
 {
     int mass;
-    public GameObject spring;
+    public Text Mass;
+    public GameObject app;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,9 @@ public class AddWeight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        Rigidbody rb = app.GetComponent<Rigidbody>();
+        if (rb.mass%10==9)
+        rb.mass=rb.mass+1;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -26,10 +30,11 @@ public class AddWeight : MonoBehaviour
 
     void ChangeMass()
     {
-        Rigidbody Spring = spring.GetComponent<Rigidbody>();
-        mass = (int) Spring.mass;
+        Rigidbody rb = app.GetComponent<Rigidbody>();
+        mass = (int) rb.mass;
         if (mass<250)
             mass+=50;
-        Spring.mass = mass;
+        rb.mass = mass;
+        Mass.text = "Mass = " + mass + "g";
     }
 }

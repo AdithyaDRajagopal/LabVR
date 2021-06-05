@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RemoveWeight : MonoBehaviour
 {
     int mass;
-    public GameObject spring;
+    public Text Mass;
+    public GameObject app;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +28,11 @@ public class RemoveWeight : MonoBehaviour
 
     void ChangeMass()
     {
-        Rigidbody Spring = spring.GetComponent<Rigidbody>();
-        mass = (int) Spring.mass;
-        if (mass>1)
+        Rigidbody rb = app.GetComponent<Rigidbody>();
+        mass = (int) rb.mass;
+        if (mass>50)
             mass-=50;
-        Spring.mass = mass;
+        rb.mass = mass;
+        Mass.text = "Mass = " + mass + "g";
     }
 }
