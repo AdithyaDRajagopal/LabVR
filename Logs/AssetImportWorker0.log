@@ -15,11 +15,11 @@ C:/Users/Ajay/projects/LabVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49755
+57973
 Successfully changed project path to: C:/Users/Ajay/projects/LabVR
 C:/Users/Ajay/projects/LabVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 75.72 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 147.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,469 +35,197 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005105 seconds.
+Registered in 0.005332 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 66.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 82.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.976 seconds
+- Completed reload, in  3.255 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001607 seconds.
+Registered in 0.001643 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.535 seconds
+- Completed reload, in  2.283 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.24 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 59.9 MB.
-System memory in use after: 60.0 MB.
+System memory in use before: 60.1 MB.
+System memory in use after: 60.2 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1585.
-Total: 5.296400 ms (FindLiveObjects: 0.260800 ms CreateObjectMapping: 0.089600 ms MarkObjects: 4.754800 ms  DeleteObjects: 0.187400 ms)
+Total: 3.089500 ms (FindLiveObjects: 0.225500 ms CreateObjectMapping: 0.088600 ms MarkObjects: 2.656300 ms  DeleteObjects: 0.116900 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Scenes/Intro.unity
+  artifactKey: Guid(0c624a5d861044f45be519bc68b3e013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Intro.unity using Guid(0c624a5d861044f45be519bc68b3e013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b61235f81fec14665bcc7f1f1fa302') in 0.065438 seconds
+  Import took 0.070034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 408.827310 seconds.
+  path: Assets/Scripts/lab-2.gif
+  artifactKey: Guid(ad3c8cfc08f6f5c4b8016de20e3ae043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/lab-2.gif using Guid(ad3c8cfc08f6f5c4b8016de20e3ae043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b6c3a6d1419e286c2748943bea9749') in 0.324672 seconds
+  Import took 0.329546 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.7 MB.
+System memory in use after: 58.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1590.
+Total: 3.431900 ms (FindLiveObjects: 0.253000 ms CreateObjectMapping: 0.065600 ms MarkObjects: 3.074400 ms  DeleteObjects: 0.036600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.866327 seconds.
   path: Assets/Scenes/Login.unity
   artifactKey: Guid(035155a39dc86114e8a176a20deedfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Login.unity using Guid(035155a39dc86114e8a176a20deedfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc5d2b100b1f3cd11dc92f8cdfb9f72') in 0.088604 seconds
-  Import took 0.093846 seconds .
+Start importing Assets/Scenes/Login.unity using Guid(035155a39dc86114e8a176a20deedfd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8256f4e257b0118c7a8cf5a2f9b1f4aa') in 0.143030 seconds
+  Import took 0.147602 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003251 seconds.
+Registered in 0.006463 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.01 ms.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.512 seconds
+- Completed reload, in  2.656 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.5 MB.
-System memory in use after: 58.6 MB.
+System memory in use before: 58.7 MB.
+System memory in use after: 58.8 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1588.
-Total: 5.206100 ms (FindLiveObjects: 0.259100 ms CreateObjectMapping: 0.109600 ms MarkObjects: 4.790100 ms  DeleteObjects: 0.044600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 330.661308 seconds.
-  path: Assets/Scenes/Hookes Law/LightingData.asset
-  artifactKey: Guid(33ee33d7d237f1348a1f3f206bfe3187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law/LightingData.asset using Guid(33ee33d7d237f1348a1f3f206bfe3187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5128a6df495cfc1791ea227b312aa23') in 0.845159 seconds
-  Import took 0.851867 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1593.
+Total: 3.534500 ms (FindLiveObjects: 0.262100 ms CreateObjectMapping: 0.084700 ms MarkObjects: 3.151300 ms  DeleteObjects: 0.033800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000458 seconds.
-  path: Assets/Scenes/Hookes Law/ReflectionProbe-0.exr
-  artifactKey: Guid(f18ff46aa1d71fe429903addb045e595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law/ReflectionProbe-0.exr using Guid(f18ff46aa1d71fe429903addb045e595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2004e6d59332e5b508bc559635c5f50') in 2.447932 seconds
-  Import took 2.455470 seconds .
+  Time since last request: 161.268837 seconds.
+  path: Assets/LabVr modified 2.png
+  artifactKey: Guid(2f17b3da0f1325844974d753c69ffecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LabVr modified 2.png using Guid(2f17b3da0f1325844974d753c69ffecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c743cbe249add55ca353f639fdf86bf') in 0.157970 seconds
+  Import took 0.164612 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001731 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.980 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.8 MB.
+System memory in use after: 58.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1597.
+Total: 3.380100 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.071500 ms MarkObjects: 3.017700 ms  DeleteObjects: 0.032700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.979983 seconds.
-  path: Assets/Materials/Black.mat
-  artifactKey: Guid(7b2b7549d9f88b14788e9f5af347dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Black.mat using Guid(7b2b7549d9f88b14788e9f5af347dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e29d39ddc942871fe9e0d9b048529b') in 0.211659 seconds
-  Import took 0.217575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Materials/Blue.mat
-  artifactKey: Guid(ab3b878cfb24a554fafda038d0bdd174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Blue.mat using Guid(ab3b878cfb24a554fafda038d0bdd174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a44340d2700e662ac4e115e1c2897b5') in 0.040789 seconds
-  Import took 0.046007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/Materials/Black.mat
-  artifactKey: Guid(7b2b7549d9f88b14788e9f5af347dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Black.mat using Guid(7b2b7549d9f88b14788e9f5af347dbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e29d39ddc942871fe9e0d9b048529b') in 0.048965 seconds
-  Import took 0.056712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000824 seconds.
-  path: Assets/Materials/Blue.mat
-  artifactKey: Guid(ab3b878cfb24a554fafda038d0bdd174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Blue.mat using Guid(ab3b878cfb24a554fafda038d0bdd174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a44340d2700e662ac4e115e1c2897b5') in 0.045550 seconds
-  Import took 0.051362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Materials/Bronze.mat
-  artifactKey: Guid(06b6094a53182e448aa946258263946b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Bronze.mat using Guid(06b6094a53182e448aa946258263946b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d55f883761cda79fd18ec4b0b30fb6') in 0.042792 seconds
-  Import took 0.050961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.979066 seconds.
-  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
-  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7d18d05c5cb4771e20e1f22d6e6f31') in 0.257505 seconds
-  Import took 0.263332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001152 seconds.
-  path: Assets/TextMesh Pro/Fonts/digital-7 SDF.asset
-  artifactKey: Guid(28f20590529f0cb4d84ed980c8bc15f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/digital-7 SDF.asset using Guid(28f20590529f0cb4d84ed980c8bc15f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4420e1eee45112af0255e56514872c7f') in 1.033468 seconds
-  Import took 1.044629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000513 seconds.
-  path: Assets/TextMesh Pro/Fonts/digital-7.ttf
-  artifactKey: Guid(ee53735e2b0c9284eb2da6fd00f54386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/digital-7.ttf using Guid(ee53735e2b0c9284eb2da6fd00f54386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5a0716726524c7f328ec45f9bfbef3') in 0.406811 seconds
-  Import took 0.414209 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.175074 seconds.
-  path: Assets/Scenes/Hookes Law VR.unity
-  artifactKey: Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law VR.unity using Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d6608c26e43ddf90b85c571571f394') in 0.017468 seconds
-  Import took 0.022493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001206 seconds.
-  path: Assets/Scenes/Hookes Law VR.unity
-  artifactKey: Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law VR.unity using Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d6608c26e43ddf90b85c571571f394') in 0.007009 seconds
-  Import took 0.011424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 66.536547 seconds.
+  Time since last request: 492.828271 seconds.
   path: Assets/Scenes/Simple Pendulum VR.unity
   artifactKey: Guid(e9be53e49101e4b4a8460d19602c3c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Simple Pendulum VR.unity using Guid(e9be53e49101e4b4a8460d19602c3c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66f8e8a11fdf6ddf0c27fde5ef60bce') in 0.140642 seconds
-  Import took 0.146056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.811886 seconds.
-  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
-  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf4477811c2bc756e2ab07b6e1be42e') in 0.491946 seconds
-  Import took 0.497861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000514 seconds.
-  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
-  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9630bc5d9b3a5dfb6959979e721fb4') in 0.025336 seconds
-  Import took 0.030359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.090945 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec1587b7129bde4b287cc77833a66ca') in 1.093643 seconds
-  Import took 1.098974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000794 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec1587b7129bde4b287cc77833a66ca') in 0.077051 seconds
-  Import took 0.082287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 130.213038 seconds.
-  path: Assets/Scenes/Simple Pendulum
-  artifactKey: Guid(ebcd3d3fb7a5d83408715c9615688c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Simple Pendulum using Guid(ebcd3d3fb7a5d83408715c9615688c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c479e6571311ee93e43e3a53ad1ceab9') in 0.266569 seconds
-  Import took 0.272710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.047186 seconds.
-  path: Assets/Scenes/Simple Pendulum/LightingData.asset
-  artifactKey: Guid(6421b11cafd76874f9f50d30d48771b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Simple Pendulum/LightingData.asset using Guid(6421b11cafd76874f9f50d30d48771b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed4564d3c4c17a09f6cbcbaf80f9252') in 0.225096 seconds
-  Import took 0.229630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000479 seconds.
-  path: Assets/Scenes/Simple Pendulum/ReflectionProbe-0.exr
-  artifactKey: Guid(e997f60293075c14d8e6b84eed54f772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Simple Pendulum/ReflectionProbe-0.exr using Guid(e997f60293075c14d8e6b84eed54f772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86681426b3db4ef8abe90e4bf1114cda') in 0.044902 seconds
-  Import took 0.050074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.524629 seconds.
-  path: Assets/Scripts/VR
-  artifactKey: Guid(94060a1ed27b9b34ba9b96bf32e29c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VR using Guid(94060a1ed27b9b34ba9b96bf32e29c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be34ab89935d1817a8e35171c401e8d') in 0.016995 seconds
-  Import took 0.022103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003908 seconds.
-  path: Assets/Scripts/VR
-  artifactKey: Guid(94060a1ed27b9b34ba9b96bf32e29c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VR using Guid(94060a1ed27b9b34ba9b96bf32e29c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be34ab89935d1817a8e35171c401e8d') in 0.005474 seconds
-  Import took 0.011876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.702113 seconds.
-  path: Assets/Scripts/VR/Simple Pendulum
-  artifactKey: Guid(0faf6cdb03e0b334d9e9df20d231795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VR/Simple Pendulum using Guid(0faf6cdb03e0b334d9e9df20d231795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162bccec5e8af01e29a562129ed57f00') in 0.006874 seconds
-  Import took 0.013698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.569169 seconds.
-  path: Assets/Scripts/VR/Hookes Law/VRSpringBehaviour.cs
-  artifactKey: Guid(9762e7373c62fbb48a2105d19d8133e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VR/Hookes Law/VRSpringBehaviour.cs using Guid(9762e7373c62fbb48a2105d19d8133e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daad654edeed35d052cc88ea9e411a91') in 0.039737 seconds
-  Import took 0.043991 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011703 seconds.
-  path: Assets/Scripts/VR/Hookes Law/VRSpringBehaviour.cs
-  artifactKey: Guid(9762e7373c62fbb48a2105d19d8133e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VR/Hookes Law/VRSpringBehaviour.cs using Guid(9762e7373c62fbb48a2105d19d8133e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daad654edeed35d052cc88ea9e411a91') in 0.005319 seconds
-  Import took 0.009192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.599930 seconds.
-  path: Assets/Materials/Wood.mat
-  artifactKey: Guid(61823c35b4ed3a04caa3d3b622d321cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Wood.mat using Guid(61823c35b4ed3a04caa3d3b622d321cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04608f9754df21d72d25c64f02efde28') in 0.041920 seconds
-  Import took 0.048037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004256 seconds.
-  path: Assets/Materials/Wood.mat
-  artifactKey: Guid(61823c35b4ed3a04caa3d3b622d321cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Wood.mat using Guid(61823c35b4ed3a04caa3d3b622d321cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04608f9754df21d72d25c64f02efde28') in 0.037592 seconds
-  Import took 0.042984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 161.390975 seconds.
-  path: Assets/Materials/Steel.mat
-  artifactKey: Guid(b240b8e5fb400564bbfc86db3a0c322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Steel.mat using Guid(b240b8e5fb400564bbfc86db3a0c322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27653671f8744131a4670626e70898e3') in 0.207321 seconds
-  Import took 0.214363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000463 seconds.
-  path: Assets/Materials/Table.mat
-  artifactKey: Guid(7c1d7047f53da76409bf30398a0523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Table.mat using Guid(7c1d7047f53da76409bf30398a0523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e1faa5542cccd3cd02bd2d599c65b4') in 0.034640 seconds
-  Import took 0.040272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/Materials/Steel.mat
-  artifactKey: Guid(b240b8e5fb400564bbfc86db3a0c322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Steel.mat using Guid(b240b8e5fb400564bbfc86db3a0c322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27653671f8744131a4670626e70898e3') in 0.040966 seconds
-  Import took 0.048593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019995 seconds.
-  path: Assets/Materials/Table.mat
-  artifactKey: Guid(7c1d7047f53da76409bf30398a0523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Table.mat using Guid(7c1d7047f53da76409bf30398a0523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e1faa5542cccd3cd02bd2d599c65b4') in 0.033336 seconds
-  Import took 0.040206 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.636672 seconds.
-  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
-  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96324bc883398fe7e21420bd1b56653') in 0.099217 seconds
-  Import took 0.104467 seconds .
+Start importing Assets/Scenes/Simple Pendulum VR.unity using Guid(e9be53e49101e4b4a8460d19602c3c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a893a2cb3e754ecc618fc2c5c4e058') in 0.151728 seconds
+  Import took 0.157815 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002502 seconds.
+Registered in 0.001603 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.048 seconds
+- Completed reload, in  1.925 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.1 MB.
-System memory in use after: 62.2 MB.
+System memory in use before: 58.8 MB.
+System memory in use after: 58.9 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1638.
-Total: 6.178500 ms (FindLiveObjects: 0.470900 ms CreateObjectMapping: 0.293700 ms MarkObjects: 5.341400 ms  DeleteObjects: 0.067900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 617.051660 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472b9cb71ecf133a4080f13238ae8e0b') in 0.311035 seconds
-  Import took 0.319023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000629 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e52f86e5c172d5d221c82ff27be5d4') in 0.120158 seconds
-  Import took 0.127910 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000633 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472b9cb71ecf133a4080f13238ae8e0b') in 0.038029 seconds
-  Import took 0.043351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e52f86e5c172d5d221c82ff27be5d4') in 0.108173 seconds
-  Import took 0.113595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.672806 seconds.
-  path: Assets/Materials/Red.mat
-  artifactKey: Guid(2693077f5e430794b9dbb7ac3529449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Red.mat using Guid(2693077f5e430794b9dbb7ac3529449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168f5ef8badb82246fa2856d647f4696') in 0.046226 seconds
-  Import took 0.052363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000457 seconds.
-  path: Assets/Materials/Room.mat
-  artifactKey: Guid(2663d84c446fc4f44802becfd26a45b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Room.mat using Guid(2663d84c446fc4f44802becfd26a45b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f89dd93daf6f677761c9001930ac3a') in 0.137974 seconds
-  Import took 0.144364 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.520767 seconds.
-  path: Assets/vrlab_icon.png
-  artifactKey: Guid(b34efe38eff3ab14c96ea5dc34fd984b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vrlab_icon.png using Guid(b34efe38eff3ab14c96ea5dc34fd984b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e8ae230de813ebcc55ecc0bbfbeea0') in 0.069002 seconds
-  Import took 0.076715 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1600.
+Total: 3.142100 ms (FindLiveObjects: 0.249100 ms CreateObjectMapping: 0.092400 ms MarkObjects: 2.766600 ms  DeleteObjects: 0.031400 ms)
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.63 ms, found 0 plugins.
+Registering precompiled user dll's ...
+Registered in 0.002166 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.122 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.8 MB.
+System memory in use after: 58.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 3.653000 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.066400 ms MarkObjects: 3.309900 ms  DeleteObjects: 0.030900 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 40.4 MB.
-System memory in use after: 40.5 MB.
+System memory in use before: 36.6 MB.
+System memory in use after: 36.7 MB.
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1640.
-Total: 5.154000 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.078700 ms MarkObjects: 4.755300 ms  DeleteObjects: 0.030200 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 4.374600 ms (FindLiveObjects: 0.313400 ms CreateObjectMapping: 0.083300 ms MarkObjects: 3.941600 ms  DeleteObjects: 0.032800 ms)
 
 ========================================================================
 Received Prepare
 Refreshing native plugins compatible for Editor in 1.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 40.6 MB.
-System memory in use after: 40.7 MB.
+System memory in use before: 36.6 MB.
+System memory in use after: 36.7 MB.
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1640.
-Total: 5.383000 ms (FindLiveObjects: 0.391800 ms CreateObjectMapping: 0.131300 ms MarkObjects: 4.825200 ms  DeleteObjects: 0.031700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 959.125333 seconds.
-  path: Assets/Scripts/CameraRotate.cs
-  artifactKey: Guid(3d072f73d2daaa24bbf2dbab002a210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CameraRotate.cs using Guid(3d072f73d2daaa24bbf2dbab002a210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a957d611d03a4b89b5a20be1ef37c1') in 0.132727 seconds
-  Import took 0.139202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 273.563445 seconds.
-  path: Assets/Scenes/Hookes Law VR.unity
-  artifactKey: Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law VR.unity using Guid(f7ae8efeaa580fc4a9ca3bd0d8506282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c0edcf07ff102e081803d94edd76c7') in 0.009205 seconds
-  Import took 0.016774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 272.941722 seconds.
-  path: Assets/Scenes/Hookes Law.unity
-  artifactKey: Guid(aef95e69f0a3a1b428bd81c057a98b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law.unity using Guid(aef95e69f0a3a1b428bd81c057a98b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68c4d150fb92cc8ea581a2b7268741a') in 0.016634 seconds
-  Import took 0.022738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002341 seconds.
-  path: Assets/Scenes/Hookes Law.unity
-  artifactKey: Guid(aef95e69f0a3a1b428bd81c057a98b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hookes Law.unity using Guid(aef95e69f0a3a1b428bd81c057a98b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68c4d150fb92cc8ea581a2b7268741a') in 0.010647 seconds
-  Import took 0.015679 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001721 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.075 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1120 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.2 MB.
-System memory in use after: 62.3 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1643.
-Total: 3.748700 ms (FindLiveObjects: 0.640400 ms CreateObjectMapping: 0.104000 ms MarkObjects: 2.952600 ms  DeleteObjects: 0.048500 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 4.274600 ms (FindLiveObjects: 0.286600 ms CreateObjectMapping: 0.067400 ms MarkObjects: 3.879700 ms  DeleteObjects: 0.038300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
