@@ -8,8 +8,7 @@ using UnityEngine.Networking;
 
 
 public class DataH{
-
-public string[] result;
+    public string[] result;
 }
 
 
@@ -197,19 +196,12 @@ public class SpringBehaviour : MonoBehaviour
         }
     }
 
-    // public void Submit()
-    // {
-    //     print("Observations Submitted...");
-    //     SceneManager.LoadScene("Login");
-    // }
-
     public void Submit()
     {
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
+        print("Trying to submit Observations...");
         StartCoroutine(expSubmit(token,key));
-        print("Observations Submitted...");
-        // SceneManager.LoadScene("Login");
     }
 
     public IEnumerator expSubmit(string token,string key){
@@ -220,30 +212,19 @@ public class SpringBehaviour : MonoBehaviour
         form.AddField("key",key);
         
         string[] r=new string[5];
-
         r[0]=JsonUtility.ToJson( new ResultH(Reading1.text,50,Ext1.text));
         r[1]= JsonUtility.ToJson(new ResultH(Reading2.text,100,Ext2.text));
         r[2]=JsonUtility.ToJson( new ResultH(Reading3.text,150,Ext3.text));
         r[3]= JsonUtility.ToJson(new ResultH(Reading4.text,200,Ext4.text));
         r[4]= JsonUtility.ToJson(new ResultH(Reading5.text,250,Ext5.text));
 
-
-       
-
-
         DataH d=new DataH();
-        
         d.result=r;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
 
-print(json);
-
-        
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
-            print("z,zbckz");
-        
             yield return www.SendWebRequest();
 
             if (www.isNetworkError || www.isHttpError)
@@ -253,13 +234,9 @@ print(json);
             }
             else
             {
-                
-                Debug.Log(www.downloadHandler.text);
-                
-
-                 var res=new Response();
-            JsonUtility.FromJsonOverwrite(www.downloadHandler.text, res);
-                Debug.Log(res);
+                print("Observations Submitted...");
+                // Debug.Log(www.downloadHandler.text);
+                SceneManager.LoadScene("Login");
             }
 
     }

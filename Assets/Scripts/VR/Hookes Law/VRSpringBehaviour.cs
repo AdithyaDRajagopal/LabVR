@@ -6,6 +6,27 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
+
+
+public class DataVRH{
+    public string[] result;
+}
+
+
+public class ResultVRH{
+    public string time ;
+    public int load;
+    public string ext;
+
+    public ResultVRH(string t,int w,string e){
+        time=t;
+        load=w;
+        ext=e;
+    }
+
+    
+}
+
 public class VRSpringBehaviour : MonoBehaviour
 {
     public Text Mass;
@@ -165,72 +186,45 @@ public class VRSpringBehaviour : MonoBehaviour
         }
     }
 
-    // public void Submit()
-    // {
-    //     print("Observations Submitted...");
-    //     SceneManager.LoadScene("Login");
-    // }
-
     public void Submit()
     {
-        //var token=PlayerPrefs.GetString("token");
-        //var key=PlayerPrefs.GetString("key");
-        //StartCoroutine(expSubmit(token,key));
-        print("Observations Submitted...");
-        // SceneManager.LoadScene("Login");
+        var token=PlayerPrefs.GetString("token");
+        var key=PlayerPrefs.GetString("key");
+        print("Trying to submit Observations...");
+        StartCoroutine(expSubmit(token,key));
     }
 
     public IEnumerator expSubmit(string token,string key){
 
         var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
-        Debug.Log(url);
         WWWForm form=new WWWForm();
         form.AddField("key",key);
         
         string[] r=new string[5];
-
-        r[0]=JsonUtility.ToJson( new ResultH(Reading1.text,50,Ext1.text));
-        r[1]= JsonUtility.ToJson(new ResultH(Reading2.text,100,Ext2.text));
-        r[2]=JsonUtility.ToJson( new ResultH(Reading3.text,150,Ext3.text));
-        r[3]= JsonUtility.ToJson(new ResultH(Reading4.text,200,Ext4.text));
-        r[4]= JsonUtility.ToJson(new ResultH(Reading5.text,250,Ext5.text));
-
-
-       
-
-
-        DataH d=new DataH();
-        
+        r[0]=JsonUtility.ToJson( new ResultVRH(Reading1.text,50,Ext1.text));
+        r[1]= JsonUtility.ToJson(new ResultVRH(Reading2.text,100,Ext2.text));
+        r[2]=JsonUtility.ToJson( new ResultVRH(Reading3.text,150,Ext3.text));
+        r[3]= JsonUtility.ToJson(new ResultVRH(Reading4.text,200,Ext4.text));
+        r[4]= JsonUtility.ToJson(new ResultVRH(Reading5.text,250,Ext5.text));
+        DataVRH d=new DataVRH();
         d.result=r;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
-
-print(json);
-
-        
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
-            print("z,zbckz");
-        
             yield return www.SendWebRequest();
 
             if (www.isNetworkError || www.isHttpError)
             {
                 Debug.Log(www.error);
-                
             }
             else
             {
-                
-                Debug.Log(www.downloadHandler.text);
-                
-
-                 var res=new Response();
-            JsonUtility.FromJsonOverwrite(www.downloadHandler.text, res);
-                Debug.Log(res);
+                print("Observations Submitted...");
+                SceneManager.LoadScene("Login");
+                // Debug.Log(www.downloadHandler.text);
             }
-
-    }
+        }
     }
 
 

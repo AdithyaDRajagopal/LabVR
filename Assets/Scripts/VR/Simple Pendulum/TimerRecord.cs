@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
 public class DataVR{
-
-public string[] result;
+    public string[] result;
 }
-
-
 
 public class ResultVR{
     public string time;
@@ -159,9 +156,8 @@ public class TimerRecord : MonoBehaviour
     {
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
+        print("Trying to Submit Observations...");
         StartCoroutine(expSubmit(token,key));
-        print("Observations Submitted...");
-        SceneManager.LoadScene("Login");
     }
 
     public IEnumerator expSubmit(string token,string key){
@@ -172,25 +168,17 @@ public class TimerRecord : MonoBehaviour
         form.AddField("key",key);
         
         string[] r=new string[5];
-
         r[0]=JsonUtility.ToJson( new ResultVR(T1.text,50));
         r[1]= JsonUtility.ToJson(new ResultVR(T2.text,100));
         r[2]=JsonUtility.ToJson( new ResultVR(T3.text,150));
         r[3]= JsonUtility.ToJson(new ResultVR(T4.text,200));
         r[4]= JsonUtility.ToJson(new ResultVR(T5.text,250));
 
-
-       
-
-
         DataVR d=new DataVR();
-        
         d.result=r;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
 
-
-        
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))
         {
         
@@ -203,13 +191,8 @@ public class TimerRecord : MonoBehaviour
             }
             else
             {
-                
-                Debug.Log(www.downloadHandler.text);
-                
-
-            //      var res=new Response();
-            // JsonUtility.FromJsonOverwrite(www.downloadHandler.text, res);
-            //     Debug.Log(res);
+                Debug.Log("Observation submitted....");
+                SceneManager.LoadScene("Login");
             }
 
     }
