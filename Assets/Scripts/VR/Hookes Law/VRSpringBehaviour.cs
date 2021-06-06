@@ -46,11 +46,15 @@ public class VRSpringBehaviour : MonoBehaviour
     public TMP_Text Ext4;
     public TMP_Text Ext5;
 
+    public GameObject MCQ;
+    public GameObject Other;
+
     void Start()
     {
         InitPos = transform.position;
         InitRot = transform.rotation;
         InitScale = transform.localScale;
+        MCQ.SetActive(false);
     }
 
     // Update is called once per frame
@@ -187,6 +191,36 @@ public class VRSpringBehaviour : MonoBehaviour
     }
 
     public void Submit()
+    {
+        MCQ.SetActive(true);
+        Other.SetActive(false);
+    }
+
+    public void SubmitA()
+    {
+        SubmitObs("A");
+        print("A");
+    }
+
+    public void SubmitB()
+    {
+        SubmitObs("B");
+        print("B");
+    }
+
+    public void SubmitC()
+    {
+        SubmitObs("C");
+        print("C");
+    }
+
+    public void SubmitD()
+    {
+        SubmitObs("D");
+        print("D");
+    }
+
+    void SubmitObs(string option)
     {
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
