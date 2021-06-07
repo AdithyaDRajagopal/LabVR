@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 
 public class DataVR{
     public string[] result;
+    public string choice;
 }
 
 public class ResultVR{
@@ -162,28 +163,28 @@ public class TimerRecord : MonoBehaviour
         Other.SetActive(false);
     }
 
-    public void SubmitA()
+     public void SubmitA()
     {
-        SubmitObs("A");
-        print("A");
+        SubmitObs("T=2π √(ml/g)");
+        print("T=2π √(ml/g)");
     }
 
     public void SubmitB()
     {
-        SubmitObs("B");
-        print("B");
+        SubmitObs("T=2π √(l/g)");
+        print("T=2π √(l/g)");
     }
 
     public void SubmitC()
     {
-        SubmitObs("C");
-        print("C");
+        SubmitObs("T=2π √(g/l)");
+        print("T=2π √(g/l)");
     }
 
     public void SubmitD()
     {
-        SubmitObs("D");
-        print("D");
+        SubmitObs("T=2πm √(l/g)");
+        print("T=2πm √(l/g)");
     }
 
     void SubmitObs(string option)
@@ -191,10 +192,10 @@ public class TimerRecord : MonoBehaviour
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
         print("Trying to Submit Observations...");
-        StartCoroutine(expSubmit(token,key));
+        StartCoroutine(expSubmit(token,key,option));
     }
 
-    public IEnumerator expSubmit(string token,string key){
+    public IEnumerator expSubmit(string token,string key, string option){
 
         var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
         Debug.Log(url);
@@ -210,6 +211,7 @@ public class TimerRecord : MonoBehaviour
 
         DataVR d=new DataVR();
         d.result=r;
+        d.choice=option;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
 

@@ -9,6 +9,8 @@ using UnityEngine.Networking;
 
 public class DataH{
     public string[] result;
+    public string choice;
+
 }
 
 
@@ -208,26 +210,25 @@ public class SpringBehaviour : MonoBehaviour
 
     public void SubmitA()
     {
-        SubmitObs("A");
-        print("A");
+        SubmitObs("F=kx");
+        print("F=kx");
     }
-
     public void SubmitB()
     {
-        SubmitObs("B");
-        print("B");
+        SubmitObs("F=k^2 x");
+        print("F=k^2 x");
     }
 
     public void SubmitC()
     {
-        SubmitObs("C");
-        print("C");
+        SubmitObs("F=-kx");
+        print("F=-kx");
     }
 
     public void SubmitD()
     {
-        SubmitObs("D");
-        print("D");
+        SubmitObs("F=√kx");
+        print("F=√kx");
     }
 
     void SubmitObs(string option)
@@ -235,13 +236,12 @@ public class SpringBehaviour : MonoBehaviour
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
         print("Trying to submit Observations...");
-        StartCoroutine(expSubmit(token,key));
+        StartCoroutine(expSubmit(token, key, option));
     }
 
-    public IEnumerator expSubmit(string token,string key){
+    public IEnumerator expSubmit(string token,string key, string option){
 
         var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
-        Debug.Log(url);
         WWWForm form=new WWWForm();
         form.AddField("key",key);
         
@@ -254,6 +254,7 @@ public class SpringBehaviour : MonoBehaviour
 
         DataH d=new DataH();
         d.result=r;
+        d.choice=option;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
 
@@ -263,8 +264,7 @@ public class SpringBehaviour : MonoBehaviour
 
             if (www.isNetworkError || www.isHttpError)
             {
-                Debug.Log(www.error);
-                
+                Debug.Log(www.error);         
             }
             else
             {

@@ -10,6 +10,7 @@ using UnityEngine.Networking;
 
 public class DataVRH{
     public string[] result;
+    public string choice;
 }
 
 
@@ -198,26 +199,25 @@ public class VRSpringBehaviour : MonoBehaviour
 
     public void SubmitA()
     {
-        SubmitObs("A");
-        print("A");
+        SubmitObs("F=kx");
+        print("F=kx");
     }
-
     public void SubmitB()
     {
-        SubmitObs("B");
-        print("B");
+        SubmitObs("F=√kx");
+        print("F=√kx");
     }
 
     public void SubmitC()
     {
-        SubmitObs("C");
-        print("C");
+        SubmitObs("F=-kx");
+        print("F=-kx");
     }
 
     public void SubmitD()
     {
-        SubmitObs("D");
-        print("D");
+        SubmitObs("F=k^2 x");
+        print("F=k^2 x");
     }
 
     void SubmitObs(string option)
@@ -225,10 +225,10 @@ public class VRSpringBehaviour : MonoBehaviour
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
         print("Trying to submit Observations...");
-        StartCoroutine(expSubmit(token,key));
+        StartCoroutine(expSubmit(token, key, option));
     }
 
-    public IEnumerator expSubmit(string token,string key){
+    public IEnumerator expSubmit(string token,string key, string option){
 
         var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
         WWWForm form=new WWWForm();
@@ -242,6 +242,7 @@ public class VRSpringBehaviour : MonoBehaviour
         r[4]= JsonUtility.ToJson(new ResultVRH(Reading5.text,250,Ext5.text));
         DataVRH d=new DataVRH();
         d.result=r;
+        d.choice=option;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
         using (UnityWebRequest www = UnityWebRequest.Post(url, form))

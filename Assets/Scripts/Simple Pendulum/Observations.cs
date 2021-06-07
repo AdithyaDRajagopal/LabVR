@@ -8,9 +8,8 @@ using UnityEngine.Networking;
 
 
 public class Data{
-
-public string[] result;
-// public string key;
+    public string[] result;
+    public string choice;
 }
 
 
@@ -128,26 +127,26 @@ public class Observations : MonoBehaviour
 
     public void SubmitA()
     {
-        SubmitObs("A");
-        print("A");
+        SubmitObs("T=2π √(ml/g)");
+        print("T=2π √(ml/g)");
     }
 
     public void SubmitB()
     {
-        SubmitObs("B");
-        print("B");
+        SubmitObs("T=2π √(l/g)");
+        print("T=2π √(l/g)");
     }
 
     public void SubmitC()
     {
-        SubmitObs("C");
-        print("C");
+        SubmitObs("T=2π √(g/l)");
+        print("T=2π √(g/l)");
     }
 
     public void SubmitD()
     {
-        SubmitObs("D");
-        print("D");
+        SubmitObs("T=2πm √(l/g)");
+        print("T=2πm √(l/g)");
     }
 
     void SubmitObs(string option)
@@ -155,10 +154,10 @@ public class Observations : MonoBehaviour
         var token=PlayerPrefs.GetString("token");
         var key=PlayerPrefs.GetString("key");
         print("Trying to Submit Observations...");
-        StartCoroutine(expSubmit(token,key));
+        StartCoroutine(expSubmit(token, key, option));
     }
 
-    public IEnumerator expSubmit(string token,string key){
+    public IEnumerator expSubmit(string token,string key, string option){
 
         var url="https://vrlabserver.herokuapp.com/api/result/submit/"+token;
         WWWForm form=new WWWForm();
@@ -173,6 +172,7 @@ public class Observations : MonoBehaviour
 
         Data d=new Data();
         d.result=r;
+        d.choice=option;
         string json = JsonUtility.ToJson(d);
         form.AddField("result",json);
 
